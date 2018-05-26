@@ -1,0 +1,16 @@
+h1 {
+    background-color: lightblue;
+    color: orchid;
+}
+em {
+    font-size: 20px;
+}
+h3 {
+    color: green;
+}
+p{
+    color:purple;
+}
+.my_color{
+    color: orangered;
+}
