@@ -1,0 +1,12 @@
+img{
+    max-width: 100%;
+}
+
+.mybox{
+    width: 500px;
+    height: 500px;
+    background-image: url('http://clipart-library.com/images/zcXo55Kbi.jpg');
+    background-size: contain;
+    background-position-x: -300px; /*horizontal*/
+    background-position-y: 100px; /*vertical*/
+}
