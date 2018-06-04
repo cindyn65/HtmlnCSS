@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My Javascript no.2 </title>
+
+    
+        
+                    <script language="javascript" type="text/javascript">
+                        //write javascript and function within this area//
+                
+                            var myObject 
+                            
+                            myObject = [
+                                {
+                                    "id" : 1,
+                                    "name" : "Steven",
+                                    "dob" : '01-Jan-1977',
+                                    "cars" : ["Civic","Evolution","Subaru"]  
+                                },
+                                {
+                                    "id" : 2,
+                                    "name" : "Mark",
+                                    "dob" : '01-May-1971',
+                                    "cars" : ["Mercedes","Mclaren","Subaru"]  
+                                },
+                                {
+                                    "id" : 3,
+                                    "name" : "Don",
+                                    "dob" : '10-Jun-1983',
+                                    "cars" : ["Hyundai","Toyota","Honda"]  
+                                },
+                                {
+                                    "id" : 4,
+                                    "name" : "Emery",
+                                    "dob" : '21-Jan-1977',
+                                    "cars" : ["QQ","Ford","Volksvagen"]  
+                                }];
+                
+
+                            var linebreak = "<br>";
+                            
+                            function printData(count){  //change value to (count) or [count] --> w a parameter
+
+                                var name = myObject[count].name;
+                                var dob = myObject[count].dob;
+                                var car ="";
+                                var carlen = myObject[count].cars.length;
+                                //document.getElementById("demo").innerHTML += name + linebreak + dob + linebreak + car + linebreak;
+                            
+                                for (var i=0; i < carlen; i++){
+                                    car += myObject[count].cars[i] + linebreak; //car = car + myObject[count].cars[i];
+
+                                }
+
+                                var x = document.getElementById("demo").innerHTML;
+                                document.getElementById("demo").innerHTML = x + name + linebreak + dob + linebreak + car + linebreak;
+                            }
+
+                        function whileloopData(){
+                            var counter = 0;
+
+                            while (counter < myObject.length) {  //start of while loop
+                                printData(counter);
+
+                                counter++; //counter+1;
+
+
+                            } //end of while loop
+                        }
+                                
+                        </script>
+        
+    </head> 
+   
+
+   
+<body>
+    <input type ="button" value="Print Data" onclick="whileloopData()"/>
+
+    <p id = "demo">
+
+    </p>
+
+</body>
+
+</html>
